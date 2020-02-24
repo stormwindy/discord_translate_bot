@@ -26,7 +26,7 @@ client.on('message', async message => {
                 const pythonProcess = spawn('python3', send);
                 pythonProcess.on('exit', function() {
                     const dispatcher = connection.playFile('/Users/egeelgun/Desktop/discord_translate_bot/output.mp3');
-                    //dispatcher.destroy();
+                    // dispatcher.destroy();
                 });
             })
             .catch(console.log);
